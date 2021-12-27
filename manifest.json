@@ -1,0 +1,21 @@
+{
+  "name": "Check Internet Health",
+  "version": "1.0",
+  "description": "Network monitoring extension",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "analysis/index.html",
+    "default_icon": {
+      "32": "images/pingStart32.png"
+    }
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*"
+  ],
+  "manifest_version": 2
+}
